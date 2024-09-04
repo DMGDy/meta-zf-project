@@ -8,7 +8,7 @@ SRCREV = "${AUTOREV}"
 # We need rust-native for compilation
 DEPENDS += "rust-native"
 
-inherit cargo
+inherit cargo_bin
 
 # Install Trunk using Cargo
 do_configure() {
