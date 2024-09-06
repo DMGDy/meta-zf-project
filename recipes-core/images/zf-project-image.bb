@@ -15,3 +15,7 @@ IMAGE_INSTALL = "\
     packagegroup-zf-utils \
     packagegroup-zf-proj \
 "
+
+PACKAGECONFIG:append:pn-cargo = " nativesdk"
+PACKAGECONFIG:append:pn-rust-native = " rust-libstd"
+PACKAGECONFIG:append:pn-openssl = " cryptodev-linux"
