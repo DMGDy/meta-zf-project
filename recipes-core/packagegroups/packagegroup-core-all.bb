@@ -44,4 +44,6 @@ RDEPENDS:packagegroup-zf-proj = "\
     nginx-cfg \
     auto-set-time \
     rust-hello-world \
+    zf-server \
+    zf-webapp \
 "
