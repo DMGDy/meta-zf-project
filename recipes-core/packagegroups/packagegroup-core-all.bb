@@ -40,10 +40,9 @@ RDEPENDS:packagegroup-zf-utils = "\
     vim \
 "
 RDEPENDS:packagegroup-zf-proj = "\
-    webpage \
     nginx-cfg \
     auto-set-time \
     rust-hello-world \
     zf-server \
-    zf-webapp \
+    wasm-app-files \
 "
