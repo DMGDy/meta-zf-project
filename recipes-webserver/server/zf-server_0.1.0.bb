@@ -7,7 +7,7 @@
 # how to get zf-server could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/zf-server/0.1.0"
 SRC_URI += "git://git@github.com/DMGDy/zf-webserver-app;protocol=ssh;nobranch=1;branch=main"
-SRCREV = "47022c432aa51a9136c09309e70c82935c73fcc6"
+SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
 PV:append = ".AUTOINC+47022c432a"
