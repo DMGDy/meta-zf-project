@@ -45,4 +45,5 @@ RDEPENDS:packagegroup-zf-proj = "\
     rust-hello-world \
     zf-server \
     wasm-app-files \
+    wifi-con \
 "
