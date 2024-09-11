@@ -39,6 +39,10 @@ RDEPENDS:packagegroup-zf-system = "\
 RDEPENDS:packagegroup-zf-utils = "\
     vim \
 "
+RDEPENDS:packagegroup-zf-ipc = "\
+    open-amp \
+    rpmsg-examples \
+"
 RDEPENDS:packagegroup-zf-proj = "\
     nginx-cfg \
     auto-set-time \
