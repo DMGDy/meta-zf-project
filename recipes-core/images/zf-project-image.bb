@@ -14,6 +14,7 @@ IMAGE_INSTALL = "\
     packagegroup-zf-system \
     packagegroup-zf-utils \
     packagegroup-zf-proj \
+    packagegroup-zf-ipc \
 "
 
 PACKAGECONFIG:append:pn-cargo = " nativesdk"
