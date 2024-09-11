@@ -1,41 +1,23 @@
-This README file contains information on the contents of the meta-zf-project layer.
+meta-zf-project 
+==================
 
-Please see the corresponding sections below for details.
+This layer is made to configure and build the project for ZF/senior design
+project. Meant to run on ArmCortexA7, namely the stm32mp157f-dk2.
 
 Dependencies
 ============
 
-  URI: <first dependency>
-  branch: <branch name>
-
-  URI: <second dependency>
-  branch: <branch name>
-
-  .
-  .
-  .
-
-Patches
-=======
-
-Please submit any patches against the meta-zf-project layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
-
-Table of Contents
-=================
-
-  I. Adding the meta-zf-project layer to your build
- II. Misc
+layers:
+      meta
+      meta-st-stm32mp
+      meta-openembedded/meta-multimedia
+      meta-openembedded/meta-networking
+      meta-openembedded/meta-webserver
+      meta-rust-bin
+      meta-clang
 
 
-I. Adding the meta-zf-project layer to your build
-=================================================
+Maintainer
+==========
 
-Run 'bitbake-layers add-layer meta-zf-project'
-
-II. Misc
-========
-
---- replace with specific information about the meta-zf-project layer ---
+Maintainer: Dylan Dy <dylanmatthew.garza@gmail.com>
