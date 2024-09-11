@@ -8,6 +8,7 @@ PACKAGES = "\
     packagegroup-zf-system \
     packagegroup-zf-utils \
     packagegroup-zf-proj \
+    packagegroup-zf-ipc \
 "
 
 RDEPENDS:packagegroup-zf-base = "\
