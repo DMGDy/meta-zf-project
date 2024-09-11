@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8" />
+    <title>ZF Device Test</title>
+    
+<script type="module" nonce="WQZYqmC3DqV8G9uKNK6rIg==">
+import init, * as bindings from '/zf-yew-webapp.js';
+const wasm = await init('/zf-yew-webapp_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+  
+<link rel="modulepreload" href="/zf-yew-webapp.js" crossorigin=anonymous integrity="sha384-t0Q/xUFMGxhWIxGlVxXHprRYDlfP99abcFkd9lSrYQOVXnJ+ZKv4jRDDJqUNq0qI">
+<link rel="preload" href="/zf-yew-webapp_bg.wasm" crossorigin=anonymous integrity="sha384-Z5z+t5mF/UEHbXx2pA6NuWQ3BUp7zESTsruYaVxZesitGRXYtkvVHbJaiNdzgavd" as="fetch" type="application/wasm"></head>
+  <body>
+  </body>
+</html>
