@@ -41,8 +41,7 @@ RDEPENDS:packagegroup-zf-utils = "\
     vim \
 "
 RDEPENDS:packagegroup-zf-ipc = "\
-    open-amp \
-    rpmsg-examples \
+    rpmsg-echo-test \
 "
 RDEPENDS:packagegroup-zf-proj = "\
     nginx-cfg \
