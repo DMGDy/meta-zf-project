@@ -42,7 +42,7 @@ RDEPENDS:packagegroup-zf-utils = "\
 "
 RDEPENDS:packagegroup-zf-ipc = "\
     rpmsg-echo-test \
-    rpmsg-tools \
+    rpmsg-utils \
 "
 RDEPENDS:packagegroup-zf-proj = "\
     nginx-cfg \
