@@ -35,6 +35,7 @@ RDEPENDS:packagegroup-zf-system = "\
     systemd-bash-completion \
     tzdata \
     ntp \
+    m4projects-stm32mp1 \
 "
 
 RDEPENDS:packagegroup-zf-utils = "\
