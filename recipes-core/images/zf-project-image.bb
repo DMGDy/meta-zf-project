@@ -1,6 +1,5 @@
 # Image for final deployment to device
 require recipes-extended/images/core-image-full-cmdline.bb
-PREFERRED_PROVIDER_virtual/kernel = "linux-stm32mp"
 
 
 
