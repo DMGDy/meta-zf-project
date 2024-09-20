@@ -44,6 +44,7 @@ RDEPENDS:packagegroup-zf-utils = "\
 RDEPENDS:packagegroup-zf-ipc = "\
     rpmsg-echo-test \
     rpmsg-utils \
+    openamp-example \
 "
 RDEPENDS:packagegroup-zf-proj = "\
     nginx-cfg \
