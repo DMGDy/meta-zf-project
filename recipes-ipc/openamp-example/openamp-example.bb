@@ -1,5 +1,8 @@
 LICENSE = "CLOSED"
 
+do_install[nostamp] = "1"
+do_deploy[nostamp] = "1"
+
 SRC_URI:append ="\
     file://fw_cortex_m4.sh\
     file://OpenAMP-Example.elf\
