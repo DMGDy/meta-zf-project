@@ -1,22 +1,23 @@
 LICENSE = "CLOSED"
 
+# Always install and deploy
 do_install[nostamp] = "1"
 do_deploy[nostamp] = "1"
 
 SRC_URI:append ="\
     file://fw_cortex_m4.sh\
-    file://OpenAMP-Example.elf\
+    file://BST-Firmware.elf\
 "
 
 do_install:append() {
-    install -d ${D}/home/root/OpenAMP-Example
-    install -m 0744 ${WORKDIR}/fw_cortex_m4.sh ${D}/home/root/OpenAMP-Example
+    install -d ${D}/home/root/M4_Firmware
+    install -m 0744 ${WORKDIR}/fw_cortex_m4.sh ${D}/home/root/M4_Firmware
 
-    install -d ${D}/home/root/OpenAMP-Example/lib/firmware
-    install -m 0744 ${WORKDIR}/OpenAMP-Example.elf ${D}/home/root/OpenAMP-Example/lib/firmware
+    install -d ${D}/home/root/M4_Firmware/lib/firmware
+    install -m 0744 ${WORKDIR}/BST-Firmware.elf ${D}/home/root/M4_Firmware/lib/firmware
 }
 
 FILES:${PN} += "\
-    /home/root/OpenAMP-Example/fw_cortex_m4.sh \
-    /home/root/OpenAMP-Example/lib/firmware/OpenAMP-Example.elf \
+    /home/root/M4_Firmware/fw_cortex_m4.sh \
+    /home/root/M4_Firmware/lib/firmware/BST-Firmware.elf \
 "
