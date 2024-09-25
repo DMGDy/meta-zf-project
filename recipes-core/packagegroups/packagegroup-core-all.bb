@@ -8,6 +8,7 @@ PACKAGES = "\
     packagegroup-zf-system \
     packagegroup-zf-utils \
     packagegroup-zf-proj \
+    packagegroup-zf-ipc \
 "
 
 RDEPENDS:packagegroup-zf-base = "\
@@ -34,10 +35,17 @@ RDEPENDS:packagegroup-zf-system = "\
     systemd-bash-completion \
     tzdata \
     ntp \
+    m4projects-stm32mp1 \
 "
 
 RDEPENDS:packagegroup-zf-utils = "\
     vim \
+    tmux \
+"
+RDEPENDS:packagegroup-zf-ipc = "\
+    rpmsg-echo-test \
+    rpmsg-utils \
+    openamp-example \
 "
 RDEPENDS:packagegroup-zf-proj = "\
     nginx-cfg \

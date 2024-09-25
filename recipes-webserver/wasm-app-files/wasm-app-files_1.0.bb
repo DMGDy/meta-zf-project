@@ -2,12 +2,17 @@ SUMARRY = "WASM application files"
 
 LICENSE = "CLOSED"
 
-SRC_URI = "\
+SRC_URI:append = "\
     file://index.html \
     file://zf-yew-webapp.js \
     file://zf-yew-webapp_bg.wasm \
 "
-do_install () {
+
+do_install[nostamp] = "1"
+
+do_deploy[nostamp] = "1"
+
+do_install:append () {
     install -d ${D}/var/www/html
     install -m 0644 ${WORKDIR}/index.html ${D}/var/www/html
     

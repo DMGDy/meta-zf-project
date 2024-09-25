@@ -1,8 +1,7 @@
 # Image for final deployment to device
-
 require recipes-extended/images/core-image-full-cmdline.bb
 
-PREFERRED_PROVIDER_virtual/kernel = "linux-stm32mp"
+
 
 IMAGE_INSTALL = "\
     packagegroup-core-boot \
@@ -14,6 +13,7 @@ IMAGE_INSTALL = "\
     packagegroup-zf-system \
     packagegroup-zf-utils \
     packagegroup-zf-proj \
+    packagegroup-zf-ipc \
 "
 
 PACKAGECONFIG:append:pn-cargo = " nativesdk"
