@@ -40,6 +40,7 @@ RDEPENDS:packagegroup-zf-system = "\
 
 RDEPENDS:packagegroup-zf-utils = "\
     vim \
+    tmux \
 "
 RDEPENDS:packagegroup-zf-ipc = "\
     rpmsg-echo-test \
