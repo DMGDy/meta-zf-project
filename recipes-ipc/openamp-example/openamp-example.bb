@@ -10,14 +10,14 @@ SRC_URI:append ="\
 "
 
 do_install:append() {
-    install -d ${D}/home/root/M4_Firmware
-    install -m 0744 ${WORKDIR}/fw_cortex_m4.sh ${D}/home/root/M4_Firmware
+    install -d ${D}/home/root/M4_Firmware/BST-Firmware
+    install -m 0744 ${WORKDIR}/fw_cortex_m4.sh ${D}/home/root/M4_Firmware/BST-Firmware
 
-    install -d ${D}/home/root/M4_Firmware/lib/firmware
-    install -m 0744 ${WORKDIR}/BST-Firmware.elf ${D}/home/root/M4_Firmware/lib/firmware
+    install -d ${D}/home/root/M4_Firmware/BST-Firmware/lib/firmware
+    install -m 0744 ${WORKDIR}/BST-Firmware.elf ${D}/home/root/M4_Firmware/BST-Firmware/lib/firmware
 }
 
 FILES:${PN} += "\
-    /home/root/M4_Firmware/fw_cortex_m4.sh \
-    /home/root/M4_Firmware/lib/firmware/BST-Firmware.elf \
+    /home/root/M4_Firmware/BST-Firmware/fw_cortex_m4.sh \
+    /home/root/M4_Firmware/BST-Firmware/lib/firmware/BST-Firmware.elf \
 "
