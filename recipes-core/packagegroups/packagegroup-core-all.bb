@@ -54,4 +54,5 @@ RDEPENDS:packagegroup-zf-proj = "\
     zf-server \
     wasm-app-files \
     wifi-con \
+    can-utils \
 "
